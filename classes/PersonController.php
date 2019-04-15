@@ -29,6 +29,8 @@ class PersonController extends DbConfig
 
     public function read()
     {
+        $data = [];
+
         $query = "SELECT * FROM users ORDER BY id DESC";
 
         $result = $this->connection->query($query);
